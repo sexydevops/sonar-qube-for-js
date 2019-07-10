@@ -1,8 +1,8 @@
 function sum(a, b) {
   return a + b;
 }
-// NOSONAR
-function sumDuplicate(a, b) {// NOSONAR
+
+function sumDuplicate(a, b) {
   return a + b;
 }
 

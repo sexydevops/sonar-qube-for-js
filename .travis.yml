@@ -1,0 +1,17 @@
+# dist: trusty
+language: node_js
+node_js:
+  - "10"
+
+cache: yarn
+
+addons:
+  sonarcloud:
+    organization: "sexydevops"
+    token:
+      secure: "b63b009568e54761f0a007bfd8dce9262335233e" # encrypted value of your token
+
+script:
+  - yarn
+  - yarn test
+  - sonar-scanner
