@@ -1,8 +1,7 @@
 function sum(a, b) {
   return a + b;
 }
-// NOSONAR
-function sumDuplicate(a, b) {// NOSONAR
+/* istanbul ignore next: I dont want to cover this line */ function sumDuplicate(a, b) {
   return a + b;
 }
 
